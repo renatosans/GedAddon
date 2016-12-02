@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Application>
+  <forms>
+    <action type="add">
+      <form appformnumber="-1" FormType="-1" type="0" BorderStyle="0" uid="frmSettings" title="Configurar Servidor" visible="1" default_button="" pane="0" color="0" left="385" top="94" width="508" height="337" client_width="492" client_height="299" AutoManaged="0" SupportedModes="15" ObjectType="">
+        <datasources>
+          <dbdatasources>
+            <action type="add" />
+          </dbdatasources>
+          <userdatasources>
+            <action type="add" />
+          </userdatasources>
+        </datasources>
+        <Menus />
+        <items>
+          <action type="add">
+            <item uid="txtServer" type="16" left="122" tab_order="0" width="350" top="51" height="22" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific TabOrder="0">
+                <databind databound="0" table="" alias="" />
+              </specific>
+            </item>
+            <item uid="lblServer" type="8" left="21" tab_order="0" width="90" top="55" height="16" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Server/Site" />
+            </item>
+            <item uid="txtDocLib" type="16" left="122" tab_order="0" width="350" top="95" height="22" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific TabOrder="0">
+                <databind databound="0" table="" alias="" />
+              </specific>
+            </item>
+            <item uid="lblDocLib" type="8" left="20" tab_order="0" width="90" top="99" height="16" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="txtDocLib" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Document Library" />
+            </item>
+            <item uid="btnSave" type="4" left="220" tab_order="0" width="75" top="243" height="25" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Gravar" />
+            </item>
+            <item uid="txtUser" type="16" left="122" tab_order="0" width="350" top="136" height="22" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific TabOrder="0">
+                <databind databound="0" table="" alias="" />
+              </specific>
+            </item>
+            <item uid="lblUser" type="8" left="21" tab_order="0" width="90" top="140" height="16" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Username" />
+            </item>
+            <item uid="txtPass" type="16" left="123" tab_order="0" width="350" top="181" height="22" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific TabOrder="0">
+                <databind databound="0" table="" alias="" />
+              </specific>
+            </item>
+            <item uid="lblPass" type="8" left="22" tab_order="0" width="90" top="185" height="16" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Password" />
+            </item>
+          </action>
+        </items>
+        <ChooseFromListCollection>
+          <action type="add">
+            <ChooseFromList UniqueID="-1" ObjectType="-1" MultiSelection="0" IsSystem="1" />
+          </action>
+        </ChooseFromListCollection>
+        <DataBrowser />
+        <Settings Enabled="0" />
+      </form>
+    </action>
+  </forms>
+</Application>

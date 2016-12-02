@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<project name="GedAddon" default="main">
+    <property environment="env" />
+    <property name="compiler" value="${env.TARGET_FRAMEWORK}/csc.exe" />
+    <property name="classlibDirectory" value="${env.CURRENT_DIR}/Build/ClassLib" />
+    <property name="exeDirectory" value="${env.CURRENT_DIR}/Build/Program" />
+    <property name="addonDirectory" value="${env.CURRENT_DIR}/Build/Addon" />
+    <property name="references" value="/r:${classlibDirectory}\DocMageFramework.dll /r:Microsoft.SharePoint.Client.dll /r:Microsoft.SharePoint.Client.Runtime.dll /r:Interop.SAPbouiCOM.dll" />
+    <property name="resources" value="/resource:Microsoft.SharePoint.Client.dll /resource:Microsoft.SharePoint.Client.Runtime.dll /resource:Interop.SAPbouiCOM.dll" />
+    <target name="main">
+        <!-- Prepara os recursos para embarca-los no EXE  -->
+        <copy file="Interop.SAPbouiCOM.binary" tofile="Interop.SAPbouiCOM.dll" />
+        <copy file="Microsoft.SharePoint.Client.binary" tofile="Microsoft.SharePoint.Client.dll" />
+        <copy file="Microsoft.SharePoint.Client.Runtime.binary" tofile="Microsoft.SharePoint.Client.Runtime.dll" />
+        <!-- Cria a pasta de destino e copia os arquivos de recursos do Addon  -->
+        <delete dir="${addonDirectory}" failonerror="false" />
+        <mkdir dir="${addonDirectory}"/>
+        <mkdir dir="${addonDirectory}/Images"/>
+        <mkdir dir="${addonDirectory}/Xml"/>
+        <copy todir="${addonDirectory}/Images">
+            <fileset dir="Images">
+                <include name="*.jpg" />
+                <include name="*.png" />
+            </fileset>
+        </copy>
+        <copy todir="${addonDirectory}/Xml">
+            <fileset dir="Xml">
+                <include name="*.srf" />
+                <include name="*.xml" />
+            </fileset>
+        </copy>
+        <!-- Gera o exe do Addon -->
+        <delete dir="${exeDirectory}" failonerror="false" />
+        <mkdir dir="${exeDirectory}"/>
+        <exec executable="${compiler}" failonerror="true">
+            <arg line="/target:winexe /platform:x86 /out:${exeDirectory}/GedAddon.exe ${references} ${resources} /recurse:*.cs " />
+        </exec>
+        <!-- Remove os arquivos de recursos criados no primeiro passo -->
+        <delete file="Interop.SAPbouiCOM.dll" />
+        <delete file="Microsoft.SharePoint.Client.dll" />
+        <delete file="Microsoft.SharePoint.Client.Runtime.dll" />
+    </target>
+</project>

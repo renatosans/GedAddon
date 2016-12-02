@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GedAddonSetup", "GedAddonSetup\GedAddonSetup.csproj", "{636378EE-ECD9-4BA4-8120-F38F2249BD67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GedAddon", "GedAddon\GedAddon.csproj", "{832387F9-C99F-449C-8B76-0215B1497675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocMageFramework", "..\..\subversion_jobAccounting\Source\DotNet\ClassLibraries\DocMageFramework\DocMageFramework.csproj", "{A0EE3595-4557-407C-81A8-59271DA8F49D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.SharpZipLib", "..\..\subversion_jobAccounting\Source\DotNet\ClassLibraries\SharpZipLib\ICSharpCode.SharpZipLib.csproj", "{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{636378EE-ECD9-4BA4-8120-F38F2249BD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636378EE-ECD9-4BA4-8120-F38F2249BD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636378EE-ECD9-4BA4-8120-F38F2249BD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636378EE-ECD9-4BA4-8120-F38F2249BD67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832387F9-C99F-449C-8B76-0215B1497675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832387F9-C99F-449C-8B76-0215B1497675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832387F9-C99F-449C-8B76-0215B1497675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832387F9-C99F-449C-8B76-0215B1497675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0EE3595-4557-407C-81A8-59271DA8F49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0EE3595-4557-407C-81A8-59271DA8F49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0EE3595-4557-407C-81A8-59271DA8F49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0EE3595-4557-407C-81A8-59271DA8F49D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

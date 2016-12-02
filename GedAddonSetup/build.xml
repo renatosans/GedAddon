@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<project name="GedAddonSetup" default="main">
+    <property environment="env" />
+    <property name="compiler" value="${env.TARGET_FRAMEWORK}/csc.exe" />
+    <property name="rootDirectory" value="${env.CURRENT_DIR}/Build" />
+    <property name="classlibDirectory" value="${env.CURRENT_DIR}/Build/ClassLib" />
+    <property name="exeDirectory" value="${env.CURRENT_DIR}/Build/Program" />
+    <property name="addonDirectory" value="${env.CURRENT_DIR}/Build/Addon" />
+    <property name="references" value="/reference:${classlibDirectory}\DocMageFramework.dll /reference:${classlibDirectory}\SharpZipLib.dll" />
+    <property name="resources" value="/resource:${classlibDirectory}\DocMageFramework.dll /resource:${classlibDirectory}\SharpZipLib.dll /resource:${rootDirectory}\GedAddonFiles.zip /resource:Logo.png /resource:Setup.ico" />
+    <target name="main">
+        <!-- Copia exe e dlls do Addon  -->
+        <copy todir="${addonDirectory}">
+            <fileset dir="${exeDirectory}">
+                <include name="GedAddon.exe" />
+            </fileset>
+        </copy>
+        <copy todir="${addonDirectory}">
+            <fileset dir="${classlibDirectory}">
+                <include name="DocMageFramework.*" />
+            </fileset>
+        </copy>
+        <!-- Copia o arquivo de registro do Addon  -->
+        <copy todir="${rootDirectory}">
+            <fileset dir=".">
+                <include name="GedAddon.ard" />
+            </fileset>
+        </copy>
+        <!-- Compacta todos os recursos, exe e dlls em um pacote zip  -->
+        <zip zipfile="Temp.zip">
+            <fileset dir="${addonDirectory}" >
+                <include name="**\**" />
+            </fileset>
+        </zip>
+        <move file="Temp.zip" tofile="${rootDirectory}/GedAddonFiles.zip" />
+        <!-- Gera o instalador e organiza os arquivos -->
+        <exec executable="${compiler}" failonerror="true">
+            <arg line="/target:winexe /platform:x86 /out:${rootDirectory}/GedAddonSetup.exe ${references} ${resources} /recurse:*.cs " />
+        </exec>
+        <move file="${rootDirectory}/GedAddonFiles.zip" tofile="${rootDirectory}/DebugData/GedAddonFiles.zip" />
+        <delete dir="${addonDirectory}" />
+    </target>
+</project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Application>
+  <forms>
+    <action type="add">
+      <form appformnumber="-1" FormType="-1" type="0" BorderStyle="0" uid="frmSearchKeys" title="Configurar Busca" visible="1" default_button="" pane="0" color="0" left="352" top="85" width="616" height="388" client_width="600" client_height="350" AutoManaged="0" SupportedModes="15" ObjectType="">
+        <datasources>
+          <dbdatasources>
+            <action type="add" />
+          </dbdatasources>
+          <userdatasources>
+            <action type="add" />
+          </userdatasources>
+        </datasources>
+        <Menus />
+        <items>
+          <action type="add">
+            <item uid="cmbFields" type="113" left="98" tab_order="0" width="300" top="40" height="26" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific AffectsFormMode="1" TabOrder="0">
+                <ValidValues>
+                  <action type="add" />
+                </ValidValues>
+                <databind databound="0" table="" alias="" />
+              </specific>
+            </item>
+            <item uid="btnAdd" type="4" left="404" tab_order="0" width="92" top="40" height="26" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Adicionar" />
+            </item>
+            <item uid="lstChoosen" type="118" left="45" tab_order="0" width="511" top="104" height="143" visible="1" enabled="0" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific ScrollBars="2">
+                <databind databound="0" table="" alias="" />
+              </specific>
+            </item>
+            <item uid="btnSave" type="4" left="254" tab_order="0" width="94" top="292" height="30" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Gravar" />
+            </item>
+          </action>
+        </items>
+        <ChooseFromListCollection>
+          <action type="add">
+            <ChooseFromList UniqueID="-1" ObjectType="-1" MultiSelection="0" IsSystem="1" />
+          </action>
+        </ChooseFromListCollection>
+        <DataBrowser />
+        <Settings Enabled="0" />
+      </form>
+    </action>
+  </forms>
+</Application>
