@@ -5,9 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GedAddonSetup", "GedAddonSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GedAddon", "GedAddon\GedAddon.csproj", "{832387F9-C99F-449C-8B76-0215B1497675}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocMageFramework", "..\..\subversion_jobAccounting\Source\DotNet\ClassLibraries\DocMageFramework\DocMageFramework.csproj", "{A0EE3595-4557-407C-81A8-59271DA8F49D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocMageFramework", "..\PrintJobAccounting\ClassLibraries\DocMageFramework\DocMageFramework.csproj", "{A0EE3595-4557-407C-81A8-59271DA8F49D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.SharpZipLib", "..\..\subversion_jobAccounting\Source\DotNet\ClassLibraries\SharpZipLib\ICSharpCode.SharpZipLib.csproj", "{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.SharpZipLib", "..\PrintJobAccounting\ClassLibraries\SharpZipLib\ICSharpCode.SharpZipLib.csproj", "{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

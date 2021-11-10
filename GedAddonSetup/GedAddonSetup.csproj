@@ -64,11 +64,11 @@
     <EmbeddedResource Include="Setup.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\subversion_jobAccounting\Source\DotNet\ClassLibraries\DocMageFramework\DocMageFramework.csproj">
+    <ProjectReference Include="..\..\PrintJobAccounting\ClassLibraries\DocMageFramework\DocMageFramework.csproj">
       <Project>{A0EE3595-4557-407C-81A8-59271DA8F49D}</Project>
       <Name>DocMageFramework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\subversion_jobAccounting\Source\DotNet\ClassLibraries\SharpZipLib\ICSharpCode.SharpZipLib.csproj">
+    <ProjectReference Include="..\..\PrintJobAccounting\ClassLibraries\SharpZipLib\ICSharpCode.SharpZipLib.csproj">
       <Project>{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}</Project>
       <Name>ICSharpCode.SharpZipLib</Name>
     </ProjectReference>
